@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb (254, 109, 115);
 }
 .container {
   display: flex;
@@ -17,9 +18,9 @@ body {
   margin: 10px;
   padding: 15px;
 }
-.container img{
+.container img {
   width: 150px;
-  height: 200px; 
+  height: 200px;
 }
 .video-games-container {
   display: flex;
@@ -31,16 +32,16 @@ body {
   margin: 10px;
   padding: 15px;
 }
-figcaption {
-  font-size: 0.8rem;
-}
 .header {
   width: 75%;
+  position: sticky;
+  top: 0;
 }
 .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .header__logo-image {
   width: 100px;
@@ -57,17 +58,17 @@ figcaption {
   text-decoration: none;
 }
 .header__link:visited {
-  color: unset;
+  color: rgb(34, 124, 157);
 }
 main {
   width: 75%;
+  background-color: rgb(173, 240, 233);
 }
 .italic-text {
   font-style: italic;
 }
 .button {
   border: none;
-  color: rgb(169, 169, 184);
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -77,5 +78,4 @@ main {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
 
