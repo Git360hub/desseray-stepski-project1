@@ -1,0 +1,52 @@
+.header {
+  width: 75%;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-image {
+  width: 100px;
+  margin-top: 5px;
+  padding: 5px;
+}
+.header__links {
+  display: flex;
+  padding: 0;
+}
+.header__item {
+  list-style: none;
+  padding: 0 0.5rem;
+}
+.header__link {
+  text-decoration: none;
+}
+.header__link:visited {
+  color: rgb(34, 124, 157);
+}
+h1 {
+  background-color: rgb(173, 240, 233);
+}
+#books {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+}
+.container {
+  display: flex;
+  background-color: white;
+}
+.container div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 15px;
+}
+.container img {
+  width: 150px;
+  height: 200px;
+}
+main {
+  width: 75%;
+}

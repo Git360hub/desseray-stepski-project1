@@ -1,5 +1,3 @@
-*,
-*:after,
 *:before {
   box-sizing: border-box;
 }
@@ -22,6 +20,12 @@ body {
   width: 150px;
   height: 200px;
 }
+#books {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 15px;
+  display:flex;
+}
 .video-games-container {
   display: flex;
   flex-direction: column;
@@ -41,7 +45,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .header__logo-image {
   width: 100px;
@@ -49,6 +52,7 @@ body {
 .header__links {
   display: flex;
   padding: 0;
+  text-decoration: none;
 }
 .header__item {
   list-style: none;
