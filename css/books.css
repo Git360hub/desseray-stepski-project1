@@ -83,3 +83,7 @@ body {
   font-style: italic;
   font-weight: bold;
 }
+#additional{
+  background-color: rgb(173, 240, 233);
+  padding: 5px;
+}
