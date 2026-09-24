@@ -20,12 +20,6 @@ body {
   width: 150px;
   height: 200px;
 }
-#books {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 15px;
-  display:flex;
-}
 .video-games-container {
   display: flex;
   flex-direction: column;
@@ -81,5 +75,8 @@ main {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+button:hover {
+  color: #FF6B6B;
 }
 

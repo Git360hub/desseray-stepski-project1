@@ -1,5 +1,9 @@
+*, *::before, *::after {
+  box-sizing: border-box; /* Ensures padding doesn't break widths */
+}
 .header {
   width: 75%;
+  top: 0;
 }
 .header__nav {
   display: flex;
@@ -8,12 +12,11 @@
 }
 .header__logo-image {
   width: 100px;
-  margin-top: 5px;
-  padding: 5px;
 }
 .header__links {
   display: flex;
   padding: 0;
+  text-decoration: none;
 }
 .header__item {
   list-style: none;
@@ -25,18 +28,47 @@
 .header__link:visited {
   color: rgb(34, 124, 157);
 }
-h1 {
+h1{
   background-color: rgb(173, 240, 233);
 }
-#books {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 15px;
+body {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb (254, 109, 115);
 }
-.container {
-  display: flex;
-  background-color: white;
+.book-container {
+  display: flex;          /* Activates Flexbox layout */
+  align-items: flex-start;
+  flex-direction:row; /* Aligns items to the top */
+  gap: 24px;              /* Creates space between the cover and text */
+  max-width: 800px;       /* Limits total width */
+  margin: 20px auto;      /* Centers the container on the screen */
+  padding: 16px;
+  font-family: sans-serif;
+}
+
+        /* Styling for the book cover image */
+.book-cover {
+  max-width: 200px;       /* Adjust to your preferred cover width */
+  width: 100%;
+  height: auto;           /* Maintains aspect ratio */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Adds a 3D book look */
+  border-radius: 4px;
+}
+
+        /* Styling for the description box */
+.book-details {
+  flex: 1;                /* Allows description to fill the remaining space */
+}
+
+.book-details {
+  flex: 1;                /* Allows description to fill the remaining space */
+}
+
+.book-title {
+  margin-top: 0;          /* Removes default spacing above title */
+  color: #333;
 }
 .container div {
   background-color: #f1f1f1;
@@ -46,7 +78,4 @@ h1 {
 .container img {
   width: 150px;
   height: 200px;
-}
-main {
-  width: 75%;
 }
